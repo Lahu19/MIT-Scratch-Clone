@@ -30,7 +30,7 @@ This project is a clone of the Scratch site by MIT, where users can create custo
 
 1. **📥 Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Lahu19/MIT-Scratch-Clone.git
    ```
 2. **📦 Install Dependencies**:
    ```bash
