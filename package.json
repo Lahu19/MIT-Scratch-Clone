@@ -1,6 +1,6 @@
 {
   "name": "scratch-clone",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "It is a MIT-SCRATCH Clone",
   "main": "index.js",
   "scripts": {
