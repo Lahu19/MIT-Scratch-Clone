@@ -8,7 +8,7 @@ import TurnClockwise from "./motion/RotateClockwise";
 import Repeate  from "./motion/Repeate";
 
 const componentMap = {
-  MOVEX_TEN: <MoveX type="MOVEX_TEN"  val1={0} val2={0} />,
+  MOVEX_TEN: <MoveX type="MOVEX_TEN" val1={0} val2={0} />,
   MOVEY_TEN: <MoveY type="MOVEY_TEN" val1={0} val2={0} />,
   CLOCKWISE_TEN: (
     <TurnClockwise type="CLOCKWISE_TEN" val1={0} val2={0} />

@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "Lahu19",
-  "license": "ISC",
+  "license": "",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@emotion/react": "^11.11.3",

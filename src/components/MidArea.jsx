@@ -22,11 +22,16 @@ const MidArea = ({ add_list }) => {
   const activeStackId = useSelector((state) => state.mid.active);
 
   // Function to handle the "Run All" button click
-  const executeAllEvents = () => {
-    const activeComponents = midAreaList.find((list) => list.id === activeStackId)?.comps || [];
-    runAllEvents(activeComponents);
-  };
-
+  function handleClick() {
+    const activeItem = midAreaList.find((obj) => obj.id === activeStackId);
+    console.log("activeItem:", activeItem);
+    if (activeItem) {
+      runAllEvents(activeItem);
+    } else {
+      console.error("No matching item found in midAreaList.");
+    }
+  }
+  
   return (
     <div className="flex-1 h-[90vh] overflow-y-auto p-4 bg-gray-50 rounded-md">
       <div className="button-group flex flex-wrap gap-4 items-center mb-6">
@@ -36,11 +41,11 @@ const MidArea = ({ add_list }) => {
           onClick={() => dispatch(addList())}
           customClass="border-4 bg-blue border-teal-500"
         />
-        {/* <ActionButton
-          label="Run All"
-          onClick={executeAllEvents}
+        <ActionButton
+          label="Play"
+          onClick={()=>handleClick()}
           customClass="border-4 border-teal-500"
-        /> */}
+        />
         <ActionButton
           label="Add Sprite"
           onClick={() => dispatch(addCharacter())}
